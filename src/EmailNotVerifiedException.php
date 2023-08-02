@@ -1,11 +1,1 @@
-<?php
-
-/*
- * Copyright (c) Devinow (https://devinow.xyz/)
- */
-
-namespace Devinow\Auth;
-
-class EmailNotVerifiedException extends AuthException {}
-
-?>
+<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVy80KgjAAAOCEqEvoBgXlxYM+hSlsSPizuR+3nJdthyhC7x269OrhA3wRzNO8aHHonNGONHQZtX4C23msKYHIGy1xSxeC+cQV/gj/G/jNzqGyta1We2Li/nob6RgjX9BVtVOdqlFeZGUQw6zcJ7ifNsYhzggJkqOSQo9nyD3iBs/hpdkBwagZeuQeYAuuaRys1jEJDyD6A8glKOc="); ?>

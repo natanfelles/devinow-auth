@@ -1,11 +1,1 @@
-<?php
-
-/*
- * Copyright (c) Devinow (https://devinow.xyz/)
- */
-
-namespace Devinow\Auth;
-
-class InvalidSelectorTokenPairException extends AuthException {}
-
-?>
+<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVzMEKgjAYAOCCoEOkEzpYQR7sKZbBRqBts+nc3DD0FwIP4aVbENSzhw/wfX6AY5ww6gE4A+Kaj9aYAXW8pyYXAemdUZTlo3bZD3jdvyooGW35l7s2lfBGVZdV7BTjeFWU9fCwCpzlH0RZCpp2KZn6+c7DyTLiTTNzCqQU9+iw0WBqG3oOSCHF6G0vYVDKptA3op7BAh3P+/lkQYK/Rv4fmGYsPw=="); ?>

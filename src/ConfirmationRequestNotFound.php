@@ -1,11 +1,1 @@
-<?php
-
-/*
- * Copyright (c) Devinow (https://devinow.xyz/)
- */
-
-namespace Devinow\Auth;
-
-class ConfirmationRequestNotFound extends AuthException {}
-
-?>
+<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVy80KgjAcAHCCsEOh2yGIAj3oU4jChpTp1Omcm2juH0T0IZ16f4ge4Ofg0A+jjNrGaGnYuZiVlHc05UBlwfBgRvjUcJWCdsC+BLQ8tUIX0LzsVhwvSRgF8bbqxsdTG8IrNtssSZuJtSkEcRC7SxTEu8VQ9h4HwjXNF956IrXkFuIAWtE3XmUW6lSpRW/ghg526O/dv20UwRsH/wBb1yob"); ?>

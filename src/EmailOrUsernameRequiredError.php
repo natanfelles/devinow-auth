@@ -1,11 +1,1 @@
-<?php
-
-/*
- * Copyright (c) Devinow (https://devinow.xyz/)
- */
-
-namespace Devinow\Auth;
-
-class EmailOrUsernameRequiredError extends AuthError {}
-
-?>
+<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVyzsOgjAYAOCYEE0YfsENBxjgFDySdiBAUR4ttCh9hDhgdDNxcfHqxgN8ezcO47TCQLWkSzPOK7Aa1d1EgPaULQTTZu7xi7ACUaLe8qtEwZ6uYrksoyzKbD7M6601qBX4AXWZI1XLXEdZEgaWk4Te5jqd/NYYwTHxN7ZCY9dsHd5rwcnH2VUeDPzcyIs2dzhCnFrB3yKO4ADuD5ZlKOo="); ?>
