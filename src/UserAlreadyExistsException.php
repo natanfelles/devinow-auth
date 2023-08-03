@@ -1,1 +1,11 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVy10KgjAAAGCCngqW60kL9GGeYiY4wmg/OTfHlqEbBBHpDery4QG+HcQInygB3jvj+VXM1phXNLJAjOCwCs4oQsWs287dpxureaffA9e/aOwumuZlgbaLeMoQnCUTJLSuNBlrXyCMsiPAKElZL1KrvLPska022pu2SYBTvmn4N4rPMTCyl0Ov1AccYF6us8VW0u/2APwBCf0pvA=="); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+class UserAlreadyExistsException extends AuthException {}
+
+?>

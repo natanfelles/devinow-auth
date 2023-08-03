@@ -1,1 +1,454 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("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"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+use Devinow\Base64\Base64;
+use Devinow\Cookie\Session;
+use Devinow\Db\PdoDatabase;
+use Devinow\Db\PdoDsn;
+use Devinow\Db\Throwable\Error;
+use Devinow\Db\Throwable\IntegrityConstraintViolationException;
+
+/**
+ * Abstract base class for components implementing user management
+ *
+ * @internal
+ */
+abstract class UserManager {
+
+	/** @var string session field for whether the client is currently signed in */
+	const SESSION_FIELD_LOGGED_IN = 'auth_logged_in';
+	/** @var string session field for the ID of the user who is currently signed in (if any) */
+	const SESSION_FIELD_USER_ID = 'auth_user_id';
+	/** @var string session field for the email address of the user who is currently signed in (if any) */
+	const SESSION_FIELD_EMAIL = 'auth_email';
+	/** @var string session field for the display name (if any) of the user who is currently signed in (if any) */
+	const SESSION_FIELD_USERNAME = 'auth_username';
+	/** @var string session field for the status of the user who is currently signed in (if any) as one of the constants from the {@see Status} class */
+	const SESSION_FIELD_STATUS = 'auth_status';
+	/** @var string session field for the roles of the user who is currently signed in (if any) as a bitmask using constants from the {@see Role} class */
+	const SESSION_FIELD_ROLES = 'auth_roles';
+	/** @var string session field for whether the user who is currently signed in (if any) has been remembered (instead of them having authenticated actively) */
+	const SESSION_FIELD_REMEMBERED = 'auth_remembered';
+	/** @var string session field for the UNIX timestamp in seconds of the session data's last resynchronization with its authoritative source in the database */
+	const SESSION_FIELD_LAST_RESYNC = 'auth_last_resync';
+	/** @var string session field for the counter that keeps track of forced logouts that need to be performed in the current session */
+	const SESSION_FIELD_FORCE_LOGOUT = 'auth_force_logout';
+
+	/** @var PdoDatabase the database connection to operate on */
+	protected $db;
+	/** @var string|null the schema name for all database tables used by this component */
+	protected $dbSchema;
+	/** @var string the prefix for the names of all database tables used by this component */
+	protected $dbTablePrefix;
+
+	/**
+	 * Creates a random string with the given maximum length
+	 *
+	 * With the default parameter, the output should contain at least as much randomness as a UUID
+	 *
+	 * @param int $maxLength the maximum length of the output string (integer multiple of 4)
+	 * @return string the new random string
+	 */
+	public static function createRandomString($maxLength = 24) {
+		// calculate how many bytes of randomness we need for the specified string length
+		$bytes = \floor((int) $maxLength / 4) * 3;
+
+		// get random data
+		$data = \openssl_random_pseudo_bytes($bytes);
+
+		// return the Base64-encoded result
+		return Base64::encodeUrlSafe($data);
+	}
+
+	/**
+	 * @param PdoDatabase|PdoDsn|\PDO $databaseConnection the database connection to operate on
+	 * @param string|null $dbTablePrefix (optional) the prefix for the names of all database tables used by this component
+	 * @param string|null $dbSchema (optional) the schema name for all database tables used by this component
+	 */
+	protected function __construct($databaseConnection, $dbTablePrefix = null, $dbSchema = null) {
+		if ($databaseConnection instanceof PdoDatabase) {
+			$this->db = $databaseConnection;
+		}
+		elseif ($databaseConnection instanceof PdoDsn) {
+			$this->db = PdoDatabase::fromDsn($databaseConnection);
+		}
+		elseif ($databaseConnection instanceof \PDO) {
+			$this->db = PdoDatabase::fromPdo($databaseConnection, true);
+		}
+		else {
+			$this->db = null;
+
+			throw new \InvalidArgumentException('The database connection must be an instance of either `PdoDatabase`, `PdoDsn` or `PDO`');
+		}
+
+		$this->dbSchema = $dbSchema !== null ? (string) $dbSchema : null;
+		$this->dbTablePrefix = (string) $dbTablePrefix;
+	}
+
+	/**
+	 * Creates a new user
+	 *
+	 * If you want the user's account to be activated by default, pass `null` as the callback
+	 *
+	 * If you want to make the user verify their email address first, pass an anonymous function as the callback
+	 *
+	 * The callback function must have the following signature:
+	 *
+	 * `function ($selector, $token)`
+	 *
+	 * Both pieces of information must be sent to the user, usually embedded in a link
+	 *
+	 * When the user wants to verify their email address as a next step, both pieces will be required again
+	 *
+	 * @param bool $requireUniqueUsername whether it must be ensured that the username is unique
+	 * @param string $email the email address to register
+	 * @param string $password the password for the new account
+	 * @param string|null $username (optional) the username that will be displayed
+	 * @param callable|null $callback (optional) the function that sends the confirmation email to the user
+	 * @return int the ID of the user that has been created (if any)
+	 * @throws InvalidEmailException if the email address has been invalid
+	 * @throws InvalidPasswordException if the password has been invalid
+	 * @throws UserAlreadyExistsException if a user with the specified email address already exists
+	 * @throws DuplicateUsernameException if it was specified that the username must be unique while it was *not*
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 *
+	 * @see confirmEmail
+	 * @see confirmEmailAndSignIn
+	 */
+	protected function createUserInternal($requireUniqueUsername, $email, $password, $username = null, callable $callback = null) {
+		\ignore_user_abort(true);
+
+		$email = self::validateEmailAddress($email);
+		$password = self::validatePassword($password);
+
+		$username = isset($username) ? \trim($username) : null;
+
+		// if the supplied username is the empty string or has consisted of whitespace only
+		if ($username === '') {
+			// this actually means that there is no username
+			$username = null;
+		}
+
+		// if the uniqueness of the username is to be ensured
+		if ($requireUniqueUsername) {
+			// if a username has actually been provided
+			if ($username !== null) {
+				// count the number of users who do already have that specified username
+				$occurrencesOfUsername = $this->db->selectValue(
+					'SELECT COUNT(*) FROM ' . $this->makeTableName('users') . ' WHERE username = ?',
+					[ $username ]
+				);
+
+				// if any user with that username does already exist
+				if ($occurrencesOfUsername > 0) {
+					// cancel the operation and report the violation of this requirement
+					throw new DuplicateUsernameException();
+				}
+			}
+		}
+
+		$password = \password_hash($password, \PASSWORD_DEFAULT);
+		$verified = \is_callable($callback) ? 0 : 1;
+
+		try {
+			$this->db->insert(
+				$this->makeTableNameComponents('users'),
+				[
+					'email' => $email,
+					'password' => $password,
+					'username' => $username,
+					'verified' => $verified,
+					'registered' => \time()
+				]
+			);
+		}
+		// if we have a duplicate entry
+		catch (IntegrityConstraintViolationException $e) {
+			throw new UserAlreadyExistsException();
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+
+		$newUserId = (int) $this->db->getLastInsertId();
+
+		if ($verified === 0) {
+			$this->createConfirmationRequest($newUserId, $email, $callback);
+		}
+
+		return $newUserId;
+	}
+
+	/**
+	 * Updates the given user's password by setting it to the new specified password
+	 *
+	 * @param int $userId the ID of the user whose password should be updated
+	 * @param string $newPassword the new password
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	protected function updatePasswordInternal($userId, $newPassword) {
+		$newPassword = \password_hash($newPassword, \PASSWORD_DEFAULT);
+
+		try {
+			$affected = $this->db->update(
+				$this->makeTableNameComponents('users'),
+				[ 'password' => $newPassword ],
+				[ 'id' => $userId ]
+			);
+
+			if ($affected === 0) {
+				throw new UnknownIdException();
+			}
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+	}
+
+	/**
+	 * Called when a user has successfully logged in
+	 *
+	 * This may happen via the standard login, via the "remember me" feature, or due to impersonation by administrators
+	 *
+	 * @param int $userId the ID of the user
+	 * @param string $email the email address of the user
+	 * @param string $username the display name (if any) of the user
+	 * @param int $status the status of the user as one of the constants from the {@see Status} class
+	 * @param int $roles the roles of the user as a bitmask using constants from the {@see Role} class
+	 * @param int $forceLogout the counter that keeps track of forced logouts that need to be performed in the current session
+	 * @param bool $remembered whether the user has been remembered (instead of them having authenticated actively)
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	protected function onLoginSuccessful($userId, $email, $username, $status, $roles, $forceLogout, $remembered) {
+		// re-generate the session ID to prevent session fixation attacks (requests a cookie to be written on the client)
+		Session::regenerate(true);
+
+		// save the user data in the session variables maintained by this library
+		$_SESSION[self::SESSION_FIELD_LOGGED_IN] = true;
+		$_SESSION[self::SESSION_FIELD_USER_ID] = (int) $userId;
+		$_SESSION[self::SESSION_FIELD_EMAIL] = $email;
+		$_SESSION[self::SESSION_FIELD_USERNAME] = $username;
+		$_SESSION[self::SESSION_FIELD_STATUS] = (int) $status;
+		$_SESSION[self::SESSION_FIELD_ROLES] = (int) $roles;
+		$_SESSION[self::SESSION_FIELD_FORCE_LOGOUT] = (int) $forceLogout;
+		$_SESSION[self::SESSION_FIELD_REMEMBERED] = $remembered;
+		$_SESSION[self::SESSION_FIELD_LAST_RESYNC] = \time();
+	}
+
+	/**
+	 * Returns the requested user data for the account with the specified username (if any)
+	 *
+	 * You must never pass untrusted input to the parameter that takes the column list
+	 *
+	 * @param string $username the username to look for
+	 * @param array $requestedColumns the columns to request from the user's record
+	 * @return array the user data (if an account was found unambiguously)
+	 * @throws UnknownUsernameException if no user with the specified username has been found
+	 * @throws AmbiguousUsernameException if multiple users with the specified username have been found
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	protected function getUserDataByUsername($username, array $requestedColumns) {
+		try {
+			$projection = \implode(', ', $requestedColumns);
+
+			$users = $this->db->select(
+				'SELECT ' . $projection . ' FROM ' . $this->makeTableName('users') . ' WHERE username = ? LIMIT 2 OFFSET 0',
+				[ $username ]
+			);
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+
+		if (empty($users)) {
+			throw new UnknownUsernameException();
+		}
+		else {
+			if (\count($users) === 1) {
+				return $users[0];
+			}
+			else {
+				throw new AmbiguousUsernameException();
+			}
+		}
+	}
+
+	/**
+	 * Validates an email address
+	 *
+	 * @param string $email the email address to validate
+	 * @return string the sanitized email address
+	 * @throws InvalidEmailException if the email address has been invalid
+	 */
+	protected static function validateEmailAddress($email) {
+		if (empty($email)) {
+			throw new InvalidEmailException();
+		}
+
+		$email = \trim($email);
+
+		if (!\filter_var($email, \FILTER_VALIDATE_EMAIL)) {
+			throw new InvalidEmailException();
+		}
+
+		return $email;
+	}
+
+	/**
+	 * Validates a password
+	 *
+	 * @param string $password the password to validate
+	 * @return string the sanitized password
+	 * @throws InvalidPasswordException if the password has been invalid
+	 */
+	protected static function validatePassword($password) {
+		if (empty($password)) {
+			throw new InvalidPasswordException();
+		}
+
+		$password = \trim($password);
+
+		if (\strlen($password) < 1) {
+			throw new InvalidPasswordException();
+		}
+
+		return $password;
+	}
+
+	/**
+	 * Creates a request for email confirmation
+	 *
+	 * The callback function must have the following signature:
+	 *
+	 * `function ($selector, $token)`
+	 *
+	 * Both pieces of information must be sent to the user, usually embedded in a link
+	 *
+	 * When the user wants to verify their email address as a next step, both pieces will be required again
+	 *
+	 * @param int $userId the user's ID
+	 * @param string $email the email address to verify
+	 * @param callable $callback the function that sends the confirmation email to the user
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	protected function createConfirmationRequest($userId, $email, callable $callback) {
+		$selector = self::createRandomString(16);
+		$token = self::createRandomString(16);
+		$tokenHashed = \password_hash($token, \PASSWORD_DEFAULT);
+		$expires = \time() + 60 * 60 * 24;
+
+		try {
+			$this->db->insert(
+				$this->makeTableNameComponents('users_confirmations'),
+				[
+					'user_id' => (int) $userId,
+					'email' => $email,
+					'selector' => $selector,
+					'token' => $tokenHashed,
+					'expires' => $expires
+				]
+			);
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+
+		if (\is_callable($callback)) {
+			$callback($selector, $token);
+		}
+		else {
+			throw new MissingCallbackError();
+		}
+	}
+
+	/**
+	 * Clears an existing directive that keeps the user logged in ("remember me")
+	 *
+	 * @param int $userId the ID of the user who shouldn't be kept signed in anymore
+	 * @param string $selector (optional) the selector which the deletion should be restricted to
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	protected function deleteRememberDirectiveForUserById($userId, $selector = null) {
+		$whereMappings = [];
+
+		if (isset($selector)) {
+			$whereMappings['selector'] = (string) $selector;
+		}
+
+		$whereMappings['user'] = (int) $userId;
+
+		try {
+			$this->db->delete(
+				$this->makeTableNameComponents('users_remembered'),
+				$whereMappings
+			);
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+	}
+
+	/**
+	 * Triggers a forced logout in all sessions that belong to the specified user
+	 *
+	 * @param int $userId the ID of the user to sign out
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	protected function forceLogoutForUserById($userId) {
+		$this->deleteRememberDirectiveForUserById($userId);
+		$this->db->exec(
+			'UPDATE ' . $this->makeTableName('users') . ' SET force_logout = force_logout + 1 WHERE id = ?',
+			[ $userId ]
+		);
+	}
+
+	/**
+	 * Builds a (qualified) full table name from an optional qualifier, an optional prefix, and the table name itself
+	 *
+	 * The optional qualifier may be a database name or a schema name, for example
+	 *
+	 * @param string $name the name of the table
+	 * @return string[] the components of the (qualified) full name of the table
+	 */
+	protected function makeTableNameComponents($name) {
+		$components = [];
+
+		if (!empty($this->dbSchema)) {
+			$components[] = $this->dbSchema;
+		}
+
+		if (!empty($name)) {
+			if (!empty($this->dbTablePrefix)) {
+				$components[] = $this->dbTablePrefix . $name;
+			}
+			else {
+				$components[] = $name;
+			}
+		}
+
+		return $components;
+	}
+
+	/**
+	 * Builds a (qualified) full table name from an optional qualifier, an optional prefix, and the table name itself
+	 *
+	 * The optional qualifier may be a database name or a schema name, for example
+	 *
+	 * @param string $name the name of the table
+	 * @return string the (qualified) full name of the table
+	 */
+	protected function makeTableName($name) {
+		$components = $this->makeTableNameComponents($name);
+
+		return \implode('.', $components);
+	}
+
+}
+
+?>

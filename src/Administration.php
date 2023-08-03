@@ -1,1 +1,575 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("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"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+use Devinow\Db\PdoDatabase;
+use Devinow\Db\PdoDsn;
+use Devinow\Db\Throwable\Error;
+
+/** Component that can be used for administrative tasks by privileged and authorized users */
+final class Administration extends UserManager {
+
+	/**
+	 * @param PdoDatabase|PdoDsn|\PDO $databaseConnection the database connection to operate on
+	 * @param string|null $dbTablePrefix (optional) the prefix for the names of all database tables used by this component
+	 * @param string|null $dbSchema (optional) the schema name for all database tables used by this component
+	 */
+	public function __construct($databaseConnection, $dbTablePrefix = null, $dbSchema = null) {
+		parent::__construct($databaseConnection, $dbTablePrefix, $dbSchema);
+	}
+
+	/**
+	 * Creates a new user
+	 *
+	 * @param string $email the email address to register
+	 * @param string $password the password for the new account
+	 * @param string|null $username (optional) the username that will be displayed
+	 * @return int the ID of the user that has been created (if any)
+	 * @throws InvalidEmailException if the email address was invalid
+	 * @throws InvalidPasswordException if the password was invalid
+	 * @throws UserAlreadyExistsException if a user with the specified email address already exists
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function createUser($email, $password, $username = null) {
+		return $this->createUserInternal(false, $email, $password, $username, null);
+	}
+
+	/**
+	 * Creates a new user while ensuring that the username is unique
+	 *
+	 * @param string $email the email address to register
+	 * @param string $password the password for the new account
+	 * @param string|null $username (optional) the username that will be displayed
+	 * @return int the ID of the user that has been created (if any)
+	 * @throws InvalidEmailException if the email address was invalid
+	 * @throws InvalidPasswordException if the password was invalid
+	 * @throws UserAlreadyExistsException if a user with the specified email address already exists
+	 * @throws DuplicateUsernameException if the specified username wasn't unique
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function createUserWithUniqueUsername($email, $password, $username = null) {
+		return $this->createUserInternal(true, $email, $password, $username, null);
+	}
+
+	/**
+	 * Deletes the user with the specified ID
+	 *
+	 * This action cannot be undone
+	 *
+	 * @param int $id the ID of the user to delete
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function deleteUserById($id) {
+		$numberOfDeletedUsers = $this->deleteUsersByColumnValue('id', (int) $id);
+
+		if ($numberOfDeletedUsers === 0) {
+			throw new UnknownIdException();
+		}
+	}
+
+	/**
+	 * Deletes the user with the specified email address
+	 *
+	 * This action cannot be undone
+	 *
+	 * @param string $email the email address of the user to delete
+	 * @throws InvalidEmailException if no user with the specified email address has been found
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function deleteUserByEmail($email) {
+		$email = self::validateEmailAddress($email);
+
+		$numberOfDeletedUsers = $this->deleteUsersByColumnValue('email', $email);
+
+		if ($numberOfDeletedUsers === 0) {
+			throw new InvalidEmailException();
+		}
+	}
+
+	/**
+	 * Deletes the user with the specified username
+	 *
+	 * This action cannot be undone
+	 *
+	 * @param string $username the username of the user to delete
+	 * @throws UnknownUsernameException if no user with the specified username has been found
+	 * @throws AmbiguousUsernameException if multiple users with the specified username have been found
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function deleteUserByUsername($username) {
+		$userData = $this->getUserDataByUsername(
+			\trim($username),
+			[ 'id' ]
+		);
+
+		$this->deleteUsersByColumnValue('id', (int) $userData['id']);
+	}
+
+	/**
+	 * Assigns the specified role to the user with the given ID
+	 *
+	 * A user may have any number of roles (i.e. no role at all, a single role, or any combination of roles)
+	 *
+	 * @param int $userId the ID of the user to assign the role to
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 *
+	 * @see Role
+	 */
+	public function addRoleForUserById($userId, $role) {
+		$userFound = $this->addRoleForUserByColumnValue(
+			'id',
+			(int) $userId,
+			$role
+		);
+
+		if ($userFound === false) {
+			throw new UnknownIdException();
+		}
+	}
+
+	/**
+	 * Assigns the specified role to the user with the given email address
+	 *
+	 * A user may have any number of roles (i.e. no role at all, a single role, or any combination of roles)
+	 *
+	 * @param string $userEmail the email address of the user to assign the role to
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @throws InvalidEmailException if no user with the specified email address has been found
+	 *
+	 * @see Role
+	 */
+	public function addRoleForUserByEmail($userEmail, $role) {
+		$userEmail = self::validateEmailAddress($userEmail);
+
+		$userFound = $this->addRoleForUserByColumnValue(
+			'email',
+			$userEmail,
+			$role
+		);
+
+		if ($userFound === false) {
+			throw new InvalidEmailException();
+		}
+	}
+
+	/**
+	 * Assigns the specified role to the user with the given username
+	 *
+	 * A user may have any number of roles (i.e. no role at all, a single role, or any combination of roles)
+	 *
+	 * @param string $username the username of the user to assign the role to
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @throws UnknownUsernameException if no user with the specified username has been found
+	 * @throws AmbiguousUsernameException if multiple users with the specified username have been found
+	 *
+	 * @see Role
+	 */
+	public function addRoleForUserByUsername($username, $role) {
+		$userData = $this->getUserDataByUsername(
+			\trim($username),
+			[ 'id' ]
+		);
+
+		$this->addRoleForUserByColumnValue(
+			'id',
+			(int) $userData['id'],
+			$role
+		);
+	}
+
+	/**
+	 * Takes away the specified role from the user with the given ID
+	 *
+	 * A user may have any number of roles (i.e. no role at all, a single role, or any combination of roles)
+	 *
+	 * @param int $userId the ID of the user to take the role away from
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 *
+	 * @see Role
+	 */
+	public function removeRoleForUserById($userId, $role) {
+		$userFound = $this->removeRoleForUserByColumnValue(
+			'id',
+			(int) $userId,
+			$role
+		);
+
+		if ($userFound === false) {
+			throw new UnknownIdException();
+		}
+	}
+
+	/**
+	 * Takes away the specified role from the user with the given email address
+	 *
+	 * A user may have any number of roles (i.e. no role at all, a single role, or any combination of roles)
+	 *
+	 * @param string $userEmail the email address of the user to take the role away from
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @throws InvalidEmailException if no user with the specified email address has been found
+	 *
+	 * @see Role
+	 */
+	public function removeRoleForUserByEmail($userEmail, $role) {
+		$userEmail = self::validateEmailAddress($userEmail);
+
+		$userFound = $this->removeRoleForUserByColumnValue(
+			'email',
+			$userEmail,
+			$role
+		);
+
+		if ($userFound === false) {
+			throw new InvalidEmailException();
+		}
+	}
+
+	/**
+	 * Takes away the specified role from the user with the given username
+	 *
+	 * A user may have any number of roles (i.e. no role at all, a single role, or any combination of roles)
+	 *
+	 * @param string $username the username of the user to take the role away from
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @throws UnknownUsernameException if no user with the specified username has been found
+	 * @throws AmbiguousUsernameException if multiple users with the specified username have been found
+	 *
+	 * @see Role
+	 */
+	public function removeRoleForUserByUsername($username, $role) {
+		$userData = $this->getUserDataByUsername(
+			\trim($username),
+			[ 'id' ]
+		);
+
+		$this->removeRoleForUserByColumnValue(
+			'id',
+			(int) $userData['id'],
+			$role
+		);
+	}
+
+	/**
+	 * Returns whether the user with the given ID has the specified role
+	 *
+	 * @param int $userId the ID of the user to check the roles for
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @return bool
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 *
+	 * @see Role
+	 */
+	public function doesUserHaveRole($userId, $role) {
+		if (empty($role) || !\is_numeric($role)) {
+			return false;
+		}
+
+		$userId = (int) $userId;
+
+		$rolesBitmask = $this->db->selectValue(
+			'SELECT roles_mask FROM ' . $this->makeTableName('users') . ' WHERE id = ?',
+			[ $userId ]
+		);
+
+		if ($rolesBitmask === null) {
+			throw new UnknownIdException();
+		}
+
+		$role = (int) $role;
+
+		return ($rolesBitmask & $role) === $role;
+	}
+
+	/**
+	 * Returns the roles of the user with the given ID, mapping the numerical values to their descriptive names
+	 *
+	 * @param int $userId the ID of the user to return the roles for
+	 * @return array
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 *
+	 * @see Role
+	 */
+	public function getRolesForUserById($userId) {
+		$userId = (int) $userId;
+
+		$rolesBitmask = $this->db->selectValue(
+			'SELECT roles_mask FROM ' . $this->makeTableName('users') . ' WHERE id = ?',
+			[ $userId ]
+		);
+
+		if ($rolesBitmask === null) {
+			throw new UnknownIdException();
+		}
+
+		return \array_filter(
+			Role::getMap(),
+			function ($each) use ($rolesBitmask) {
+				return ($rolesBitmask & $each) === $each;
+			},
+			\ARRAY_FILTER_USE_KEY
+		);
+	}
+
+	/**
+	 * Signs in as the user with the specified ID
+	 *
+	 * @param int $id the ID of the user to sign in as
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 * @throws EmailNotVerifiedException if the user has not verified their email address via a confirmation method yet
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function logInAsUserById($id) {
+		$numberOfMatchedUsers = $this->logInAsUserByColumnValue('id', (int) $id);
+
+		if ($numberOfMatchedUsers === 0) {
+			throw new UnknownIdException();
+		}
+	}
+
+	/**
+	 * Signs in as the user with the specified email address
+	 *
+	 * @param string $email the email address of the user to sign in as
+	 * @throws InvalidEmailException if no user with the specified email address has been found
+	 * @throws EmailNotVerifiedException if the user has not verified their email address via a confirmation method yet
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function logInAsUserByEmail($email) {
+		$email = self::validateEmailAddress($email);
+
+		$numberOfMatchedUsers = $this->logInAsUserByColumnValue('email', $email);
+
+		if ($numberOfMatchedUsers === 0) {
+			throw new InvalidEmailException();
+		}
+	}
+
+	/**
+	 * Signs in as the user with the specified display name
+	 *
+	 * @param string $username the display name of the user to sign in as
+	 * @throws UnknownUsernameException if no user with the specified username has been found
+	 * @throws AmbiguousUsernameException if multiple users with the specified username have been found
+	 * @throws EmailNotVerifiedException if the user has not verified their email address via a confirmation method yet
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function logInAsUserByUsername($username) {
+		$numberOfMatchedUsers = $this->logInAsUserByColumnValue('username', \trim($username));
+
+		if ($numberOfMatchedUsers === 0) {
+			throw new UnknownUsernameException();
+		}
+		elseif ($numberOfMatchedUsers > 1) {
+			throw new AmbiguousUsernameException();
+		}
+	}
+
+	/**
+	 * Changes the password for the user with the given ID
+	 *
+	 * @param int $userId the ID of the user whose password to change
+	 * @param string $newPassword the new password to set
+	 * @throws UnknownIdException if no user with the specified ID has been found
+	 * @throws InvalidPasswordException if the desired new password has been invalid
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function changePasswordForUserById($userId, $newPassword) {
+		$userId = (int) $userId;
+		$newPassword = self::validatePassword($newPassword);
+
+		$this->updatePasswordInternal(
+			$userId,
+			$newPassword
+		);
+
+		$this->forceLogoutForUserById($userId);
+	}
+
+	/**
+	 * Changes the password for the user with the given username
+	 *
+	 * @param string $username the username of the user whose password to change
+	 * @param string $newPassword the new password to set
+	 * @throws UnknownUsernameException if no user with the specified username has been found
+	 * @throws AmbiguousUsernameException if multiple users with the specified username have been found
+	 * @throws InvalidPasswordException if the desired new password has been invalid
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	public function changePasswordForUserByUsername($username, $newPassword) {
+		$userData = $this->getUserDataByUsername(
+			\trim($username),
+			[ 'id' ]
+		);
+
+		$this->changePasswordForUserById(
+			(int) $userData['id'],
+			$newPassword
+		);
+	}
+
+	/**
+	 * Deletes all existing users where the column with the specified name has the given value
+	 *
+	 * You must never pass untrusted input to the parameter that takes the column name
+	 *
+	 * @param string $columnName the name of the column to filter by
+	 * @param mixed $columnValue the value to look for in the selected column
+	 * @return int the number of deleted users
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	private function deleteUsersByColumnValue($columnName, $columnValue) {
+		try {
+			return $this->db->delete(
+				$this->makeTableNameComponents('users'),
+				[
+					$columnName => $columnValue
+				]
+			);
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+	}
+
+	/**
+	 * Modifies the roles for the user where the column with the specified name has the given value
+	 *
+	 * You must never pass untrusted input to the parameter that takes the column name
+	 *
+	 * @param string $columnName the name of the column to filter by
+	 * @param mixed $columnValue the value to look for in the selected column
+	 * @param callable $modification the modification to apply to the existing bitmask of roles
+	 * @return bool whether any user with the given column constraints has been found
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 *
+	 * @see Role
+	 */
+	private function modifyRolesForUserByColumnValue($columnName, $columnValue, callable $modification) {
+		try {
+			$userData = $this->db->selectRow(
+				'SELECT id, roles_mask FROM ' . $this->makeTableName('users') . ' WHERE ' . $columnName . ' = ?',
+				[ $columnValue ]
+			);
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+
+		if ($userData === null) {
+			return false;
+		}
+
+		$newRolesBitmask = $modification($userData['roles_mask']);
+
+		try {
+			$this->db->exec(
+				'UPDATE ' . $this->makeTableName('users') . ' SET roles_mask = ? WHERE id = ?',
+				[
+					$newRolesBitmask,
+					(int) $userData['id']
+				]
+			);
+
+			return true;
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+	}
+
+	/**
+	 * Assigns the specified role to the user where the column with the specified name has the given value
+	 *
+	 * You must never pass untrusted input to the parameter that takes the column name
+	 *
+	 * @param string $columnName the name of the column to filter by
+	 * @param mixed $columnValue the value to look for in the selected column
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @return bool whether any user with the given column constraints has been found
+	 *
+	 * @see Role
+	 */
+	private function addRoleForUserByColumnValue($columnName, $columnValue, $role) {
+		$role = (int) $role;
+
+		return $this->modifyRolesForUserByColumnValue(
+			$columnName,
+			$columnValue,
+			function ($oldRolesBitmask) use ($role) {
+				return $oldRolesBitmask | $role;
+			}
+		);
+	}
+
+	/**
+	 * Takes away the specified role from the user where the column with the specified name has the given value
+	 *
+	 * You must never pass untrusted input to the parameter that takes the column name
+	 *
+	 * @param string $columnName the name of the column to filter by
+	 * @param mixed $columnValue the value to look for in the selected column
+	 * @param int $role the role as one of the constants from the {@see Role} class
+	 * @return bool whether any user with the given column constraints has been found
+	 *
+	 * @see Role
+	 */
+	private function removeRoleForUserByColumnValue($columnName, $columnValue, $role) {
+		$role = (int) $role;
+
+		return $this->modifyRolesForUserByColumnValue(
+			$columnName,
+			$columnValue,
+			function ($oldRolesBitmask) use ($role) {
+				return $oldRolesBitmask & ~$role;
+			}
+		);
+	}
+
+	/**
+	 * Signs in as the user for which the column with the specified name has the given value
+	 *
+	 * You must never pass untrusted input to the parameter that takes the column name
+	 *
+	 * @param string $columnName the name of the column to filter by
+	 * @param mixed $columnValue the value to look for in the selected column
+	 * @return int the number of matched users (where only a value of one means that the login may have been successful)
+	 * @throws EmailNotVerifiedException if the user has not verified their email address via a confirmation method yet
+	 * @throws AuthError if an internal problem occurred (do *not* catch)
+	 */
+	private function logInAsUserByColumnValue($columnName, $columnValue) {
+		try {
+			$users = $this->db->select(
+				'SELECT verified, id, email, username, status, roles_mask FROM ' . $this->makeTableName('users') . ' WHERE ' . $columnName . ' = ? LIMIT 2 OFFSET 0',
+				[ $columnValue ]
+			);
+		}
+		catch (Error $e) {
+			throw new DatabaseError($e->getMessage());
+		}
+
+		$numberOfMatchingUsers = ($users !== null) ? \count($users) : 0;
+
+		if ($numberOfMatchingUsers === 1) {
+			$user = $users[0];
+
+			if ((int) $user['verified'] === 1) {
+				$this->onLoginSuccessful($user['id'], $user['email'], $user['username'], $user['status'], $user['roles_mask'], \PHP_INT_MAX, false);
+			}
+			else {
+				throw new EmailNotVerifiedException();
+			}
+		}
+
+		return $numberOfMatchingUsers;
+	}
+
+}
+
+?>

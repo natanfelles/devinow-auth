@@ -1,1 +1,11 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVy8EKgjAYAGCCTgVTO2mBHuZTzISNMJobrq2xscp/FHQoL517+vD+fUlGMNlzhgC8BXGSk7P2lY59ZFaKjEZvNeNyEsx4Gh7AbvBNx8vR8Lpt8HrGTxWjd+yTMd5Rw8YOGkxwtUMEF2UfZOk0eNdfq8XKgD0PBfIahkH80vyQI6uCuget32ib1e2ymi9VkGwQ+gMDHif+"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+class TokenExpiredException extends AuthException {}
+
+?>

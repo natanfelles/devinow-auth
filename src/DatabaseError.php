@@ -1,1 +1,11 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVyzsOgjAYAOCQEE0YfsENBxjgFDySMjQCVR5taVH6CHHAcARPbzjAdwmyJCuaCqhRdO2mZQNGEBnmFuhI2Ur0vcEc74FmWNVpmZae4Mv26S3qZbUDqTHSRGGTlnkSu36ehM57fkS9tVJUbeR4Gk1Dd/LFaKRof/65CYGLZ6dexn7hBlnhxodFAsEVgj+s8SO6"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+class DatabaseError extends AuthError {}
+
+?>

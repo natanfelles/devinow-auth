@@ -1,1 +1,11 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVyzsOgjAYAOCQEE0YauuGAwxwCh5JO2CAlpeU1gftPxijkU2dPL3xAN+GJFGSVQxZq6XlpViUlDdsamBScEJBy4FVYjn0I5soezV2/4bhQ8xYzGWcx7mn5OV+7YB2mj0RLwtq+FzYOE+j0MVp5Dvnowg6AK1YHTieoVPfrrAarFb1F68rH0nVtPPJwgPtUJK54d9SRdEWkR+Vcyjd"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+class TooManyRequestsException extends AuthException {}
+
+?>

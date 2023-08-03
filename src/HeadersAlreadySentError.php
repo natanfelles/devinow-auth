@@ -1,1 +1,11 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVyzsOgjAYAOCQEE0YfsENBxjgFDySMjRCK68WCkIfIQ4YBwdHT288wHfykijJqgKYlmxrxnUHThHtZgKsZ3wbEP3UBFPOdsXIci3enuJYlnEe544Y1v3RGtROxQtoiZGiEus4T6PQdtPIt5b5FrTGTKIggeUoNHbNwRW9ngT5usfKh0HUjbxr84QLJJkd/i0SCM7g/QCFWicH"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+class HeadersAlreadySentError extends AuthError {}
+
+?>

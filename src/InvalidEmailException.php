@@ -1,1 +1,11 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVy8EKgjAYAGCCTgXTddICPcynmAmOsJobrunYMNw/CDqUDxD09OL9+yJMCT1zhgCcAXGXszXmHfs2MCMFroMzmnE5e3cbZuGmxoZf7Idrz4uqJPsVv1QIzrIvZrype+YbKAkl+QlRkmbtKDOrwdn2mW92PZhHlyKnoevEP04uCTJqVNOo9QcdcVFt8/XWCqIDQgsY+Cgv"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+class InvalidEmailException extends AuthException {}
+
+?>

@@ -1,1 +1,11 @@
-<?php if(!extension_loaded("devinow")){die(base64_decode("VGhpcyBGaWxlIElzIEVuY3J5cHRlZCBCeSBEZXZpbm93IEFuZCBSZXF1aXJlcyBBIERlZGljYXRlZCBMb2FkZXIgVG8gUnVuIQ=="));} devinow_execute("eNoVy88KgjAYAPCEqEvoBgXlxYM+hSlsePDP5tzcl+uQnwdJIt+gpw8f4BfQNE6zmvuIDlBUch0A3mRsJg5SUDY5MLyWq+CvXlSsnMFYoWHx7ViOxWYvSj+WjzOolPiRpijRNrZkaZbkXkiT/Bjx9rlzyDolhBedrdEwXGk3sc7xr3+rDkQr6fqW4Uz25B6H3mZRGXoiwR+dMiiE"); ?>
+<?php
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
+ */
+
+namespace Devinow\Auth;
+
+class AttemptCancelledException extends AuthException {}
+
+?>

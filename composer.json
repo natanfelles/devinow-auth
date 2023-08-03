@@ -8,8 +8,7 @@
 	  "php": ">=8.1.0",
 	  "devinow/base64": "*",
 	  "devinow/cookie": "*",
-	  "devinow/database": "*",
-	  "ext-devinow": "*"
+	  "devinow/database": "*"
 	},
 	"authors": [
 	  {
