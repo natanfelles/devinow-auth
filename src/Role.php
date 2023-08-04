@@ -1,14 +1,7 @@
 <?php
-/**
- * Devinow PHP Decoder
- * 
-*/
-<?php
-/**
- * Devinow PHP Decoder
- * 
-*/
-(https://devinow.xyz/)
+
+/*
+ * Copyright (c) Devinow (https://devinow.xyz/)
  */
 
 namespace Devinow\Auth;
